@@ -1,0 +1,3 @@
+BASE_OS_IMAGE="rancher/harvester-os:v1.2-20230907"
+IMAGE_NAME="gmehta3/base-driver-image"
+IMAGE_TAG="v1.2.0"
