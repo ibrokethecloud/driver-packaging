@@ -27,7 +27,7 @@ spec:
           name: nvidia-driver-ctr
           env:
             - name: "DRIVER_LOCATION"
-              value: "http://172.19.96.23/iso/vgpu/NVIDIA-Linux-x86_64-525.60.12-vgpu-kvm.run"
+              value: "HTTPENDPOINT/NVIDIA-Linux-x86_64-525.60.12-vgpu-kvm.run"
           securityContext:
             privileged: true
             seLinuxOptions:

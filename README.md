@@ -10,3 +10,5 @@ Builds on top of the harvester-base-image and adds a wrapper script. The wrapper
 
 ## deploy
 Contains the definition of the daemonset used to deploy the nvidia-driver container image. Users are expected to build the `nvidia-driver` and push to their private repo before using it in harvester.
+
+Users need to change the variable definition `DRIVER_LOCATION` to point to a valid http endpoint where the NVIDIA driver is available
