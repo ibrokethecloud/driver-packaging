@@ -2,6 +2,11 @@
 
 set -e
 
+if [ -f /tmp/ready ]
+then
+  rm /tmp/ready
+fi
+
 if [ -n "${DRIVER_LOCATION}" ]
 then
     echo "Installing nvidia driver from ${DRIVER_LOCATION}"
@@ -11,5 +16,10 @@ then
 else
     echo "No DRIVER_LOCATION specified. skipping..."
 fi
+
+echo "running nvidia vgpud"
+/usr/bin/nvidia-vgpud
+
+echo "driver ready" > /tmp/ready
 
 tail -f /dev/null
