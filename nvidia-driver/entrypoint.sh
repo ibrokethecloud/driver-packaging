@@ -19,6 +19,7 @@ fi
 
 echo "running nvidia vgpud"
 /usr/bin/nvidia-vgpud
+/usr/bin/nvidia-vgpu-mgr
 
 echo "driver ready" > /tmp/ready
 
